@@ -1,0 +1,68 @@
+/* === Estilo geral da página - Aula dia 17-06-2025 Serra  === */
+body {
+    font-family: Arial, sans-serif;           /* Define a fonte principal da página */
+    background-color: #e7e6e6;                /* Cor de fundo clara */
+    color: #333;                              /* Cor do texto padrão (cinza escuro) */
+    line-height: 1.6;                         /* Altura entre linhas para melhor leitura */
+}
+
+/* === Cabeçalho === */
+header h1 {
+    font-size: 2.5rem;                        /* Tamanho grande para o título principal */
+    font-weight: 700;                         /* Deixa o texto em negrito */
+}
+
+header p {
+    font-size: 1.25rem;                       /* Tamanho intermediário para subtítulo */
+    color: #666;                              /* Cor de texto secundária */
+}
+
+/* === Galeria de imagens com efeito de hover === */
+.galeria-hover img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Suaviza a animação de zoom e sombra */
+    cursor: pointer;                         /* Muda o cursor para indicar interatividade */
+    border-radius: 8px;                      /* Arredonda os cantos das imagens */
+}
+
+.galeria-hover img:hover {
+    transform: scale(1.05);                  /* Aplica um leve zoom ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Adiciona sombra para dar destaque */
+}
+
+/* === Espaçamento e estilo para o elemento <figure> que contém as imagens === */
+figure {
+    margin: 0;                               /* Remove margem padrão */
+}
+
+/* === Títulos das seções como "Fotos da Cavalgada" e "Vídeo" === */
+h2 {
+    font-size: 1.8rem;                       /* Tamanho grande para títulos */
+    margin-bottom: 1.5rem;                   /* Espaço inferior entre título e conteúdo */
+    border-left: 5px solid #007bff;          /* Barra azul à esquerda como destaque */
+    padding-left: 10px;                      /* Espaço entre o texto e a barra */
+    color: #007bff;                          /* Cor azul do Bootstrap para consistência */
+}
+
+/* === Estilo para o vídeo responsivo === */
+video {
+    width: 100%;                             /* Ocupa toda a largura disponível */
+    height: auto;                            /* Altura proporcional à largura */
+    border-radius: 8px;                      /* Cantos arredondados para estética */
+}
+
+/* === Imagens com classe .img-fluid (do Bootstrap) === */
+.img-fluid {
+    max-width: 100%;                         /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto;                            /* Mantém proporção original da imagem */
+}
+
+/* === Ajustes de responsividade para telas muito pequenas (ex: celular) === */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;                     /* Reduz tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 1.5rem;                   /* Reduz tamanho dos títulos de seção */
+    }
+}
